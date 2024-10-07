@@ -38,7 +38,7 @@ Este es un proyecto de registro de usuarios para una aplicación web llamada **T
 1. Clona el repositorio:
 
    ```bash
-   git clone # Proyecto TecnOnline
+   git clone https://github.com/Cuniversidad/Proyecto-TecnOnline.git
 
 Este es un proyecto de registro de usuarios para una aplicación web llamada **TecnOnline**. Permite a los usuarios crear una cuenta y almacenar sus datos en una base de datos MySQL.
 
@@ -95,4 +95,16 @@ Este es un proyecto de registro de usuarios para una aplicación web llamada **T
    node server.js
 2. Abre tu navegador y ve a http://localhost:3000/crearCuenta.html para acceder al formulario de registro.
 3. Completa el formulario y envíalo para crear una nueva cuenta.
-  
+
+
+## Contribución
+¡Contribuciones son bienvenidas! Si deseas contribuir a este proyecto, por favor sigue estos pasos:
+
+Haz un fork del proyecto.
+Crea una nueva rama (git checkout -b feature/nueva-caracteristica).
+Realiza tus cambios y haz commit (git commit -m 'Añadir nueva característica').
+Haz push a la rama (git push origin feature/nueva-caracteristica).
+Abre un Pull Request.
+
+## Licencia
+Este proyecto está bajo la Licencia MIT 
