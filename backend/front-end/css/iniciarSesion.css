@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #3cb043;
+    color: white;
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+h1{
+    margin-left: 10rem;
+}
+.headertitle {
+    font-family: "Lacquer", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: start;
+}
+nav {
+    background-color: #3cb043;
+    padding: 10px;
+    margin-bottom: 18px;
+    display: flex;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: end;
+}
+nav ul li {
+    font-family: "Joan", serif;
+    color: white;
+    font-size: 1.6rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+nav ul li:hover{
+    border-bottom: 2px solid whitesmoke;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: "Joan", serif;
+    color: white;
+    font-size: 1.6rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+nav ul li a:visited{
+    text-decoration: none;
+    font-family: "Joan", serif;
+    color: white;
+    font-size: 1.6rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 380px;
+    max-width: 400px;
+    text-align: center;
+    margin: 7rem auto;
+}
+
+.h2-container {
+    text-align: center;
+    margin-bottom: 55px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.form-login label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.form-login input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 1.6rem;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #3cb043;
+    color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.footertitle{
+    font-family: "Lacquer", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: start;
+    font-size: 3.8rem;
+    margin-left: 12rem;
+}
+footer ul {
+    list-style: none;
+    padding: 5px;
+    text-align: start;
+    margin-right: 10rem;
+    transition: 1s ease;
+}
+footer ul li {
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+}
+footer ul li:hover{
+    border-bottom: 2px solid whitesmoke;
+}
+footer .contact-info {
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    font-family: "Lacquer", system-ui;
+}
+

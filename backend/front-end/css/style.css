@@ -1,0 +1,257 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #3cb043;
+    color: white;
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+h1{
+    margin-left: 10rem;
+}
+.headertitle {
+    font-family: "Lacquer", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: start;
+}
+nav {
+    background-color: #3cb043;
+    padding: 10px;
+    margin-bottom: 15px;
+    display: flex;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: end;
+}
+nav ul li {
+    font-family: "Joan", serif;
+    color: white;
+    font-size: 1.6rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+nav ul li:hover{
+    border-bottom: 2px solid whitesmoke;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: "Joan", serif;
+    color: white;
+    font-size: 1.6rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+nav ul li a:visited{
+    text-decoration: none;
+    font-family: "Joan", serif;
+    color: white;
+    font-size: 1.6rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.user-icon img {
+    width: 70px;
+    height: 70px;
+    margin-top: 14px;
+    margin-left: 6.5rem;
+}
+.banner {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 160px;
+    margin-right: 180px;
+    height: 350px;
+}
+.banner img {
+    max-width: 400px;
+    height: 350px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+}
+.banner-content {
+    max-width: 600px;
+    margin-left: 150px;
+    margin-bottom: 120px;
+}
+.banner-content h2 {
+    font-size: 36px;
+}
+.banner-content p {
+    font-size: 18px;
+}
+.banner-content button {
+    position: relative;
+    left: 90px;
+    top: 50px;
+    background-color: #f5de7d;
+    color: #000000;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    border-radius: 15px;
+    width: 180px;
+    height: 50px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.banner-content button:hover{
+    transform: perspective(200px) scale3d(0.7, 0.7, 0.7) translateZ(100px);
+}
+.parrafo{
+    width: 80%;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    margin-left: 180px;
+    font-family: "Lacquer", system-ui;
+    font-size: 2rem;
+}
+.Container-Cards{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    margin-left: 170px;
+    margin-bottom: 55px;
+}
+.Cards{
+    width: 310px;
+    height: 530px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    background: rgb(2,0,36);
+    background: linear-gradient(175deg, rgba(2,0,36,0.835171568627451) 0%, rgb(147, 17, 17) 52%, rgba(22,22,22,0.9051995798319328) 100%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    justify-self: center;
+    margin-left: 35px;
+    margin-right: 25px;
+}
+.Cards img{
+    width: 310px;
+    height: 320px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    object-fit:unset;
+}
+.Cards-Price-title{
+    display: flex;
+    width: 350px;
+}
+.Cards-Price-title h3{
+    width: 175px;
+    font-size: 1.5rem;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+.Cards-Price-title h4{
+    width: 175px;
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-right: 54px;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, rgba(255, 34, 34, 0.614), rgb(200, 0, 255), rgba(155, 2, 2, 0));
+    border-image-slice: 1;
+    font-family: 'Lobster', cursive;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.Cards p{
+    font-family: 'Lora', serif;
+    margin-top: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: aliceblue;
+    text-align: justify;
+}
+.Cards button{
+    position: relative;
+    left: 90px;
+    top: 50px;
+    background-color: #f5de7d;
+    color: #000000;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+    border-radius: 15px;
+    width: 140px;
+    height: 40px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.Cards button:hover{
+    transform: perspective(200px) scale3d(0.7, 0.7, 0.7) translateZ(100px);
+}
+.Ver{
+    position: relative;
+    top: 20px;
+    margin-left: 800px;
+    background-color: #00000000;
+    color: #ffffff;
+    font-weight: bolder;
+    font-family: 'Lobster', cursive;
+    border-top: none;
+    border-left: none;
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, rgb(255, 34, 34), rgb(255, 0, 195), rgba(155, 2, 2, 0));
+    border-image-slice: 1;
+    width: 120px;
+    height: 35px;
+    font-size: 3rem;
+}
+.Ver:hover{
+    transform: perspective(200px) scale3d(0.7, 0.7, 0.8) translateZ(90px);
+}
+
+footer {
+    background-color: #3cb043;
+    color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.footertitle{
+    font-family: "Lacquer", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: start;
+    font-size: 3.8rem;
+    margin-left: 12rem;
+}
+footer ul {
+    list-style: none;
+    padding: 5px;
+    text-align: start;
+    margin-right: 10rem;
+    transition: 1s ease;
+}
+footer ul li {
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+}
+footer ul li:hover{
+    border-bottom: 2px solid whitesmoke;
+}
+footer .contact-info {
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    font-family: "Lacquer", system-ui;
+}
