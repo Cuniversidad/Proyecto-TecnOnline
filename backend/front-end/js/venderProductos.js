@@ -60,13 +60,21 @@ document
 document.addEventListener("DOMContentLoaded", () => {
   const formVender = document.querySelector(".form-vender");
 
+  function capitalizarTexto(texto) {
+    return texto.charAt(0).toUpperCase() + texto.slice(1).toLowerCase();
+  }
+
   if (formVender) {
     formVender.addEventListener("submit", async function (event) {
       event.preventDefault();
 
-      const nombreProducto = document.getElementById("nombre-producto").value;
+      const nombreProducto = capitalizarTexto(
+        document.getElementById("nombre-producto").value
+      );
       const precio = document.getElementById("precio").value;
-      const descripcion = document.getElementById("descripcion").value;
+      const descripcion = capitalizarTexto(
+        document.getElementById("descripcion").value
+      );
       const imagen = document.getElementById("file-input").files[0]; // Capturar la imagen seleccionada
 
       // Usamos FormData para enviar los datos y la imagen

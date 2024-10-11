@@ -41,6 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
           const result = await response.json();
           alert("¡Cuenta creada exitosamente!");
           console.log(result);
+
+          formRegister.reset();
         } else {
           alert("Error al crear la cuenta.");
         }

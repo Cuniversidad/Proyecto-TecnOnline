@@ -1,6 +1,14 @@
 document.addEventListener("DOMContentLoaded", async function () {
   const contenedorProductos = document.querySelector(".Container-Cards"); // Contenedor donde se pintarán las Cards
 
+  const formatoMoneda = (valor) => {
+    return valor.toLocaleString("es-CO", {
+      style: "currency",
+      currency: "COP",
+      minimumFractionDigits: 0,
+    });
+  };
+
   try {
     // Hacer la solicitud al servidor para obtener los productos
     const response = await fetch("/api/productos");
@@ -19,11 +27,14 @@ document.addEventListener("DOMContentLoaded", async function () {
       const cardPriceTitle = document.createElement("div");
       cardPriceTitle.classList.add("Cards-Price-title");
 
-      const h3 = document.createElement("h3");
-      h3.innerHTML = `${producto.nombre}`;
-
       const h4 = document.createElement("h4");
-      h4.innerHTML = `$${producto.precio}`;
+      h4.innerHTML = `${producto.nombre}`;
+
+      const h5 = document.createElement("h5");
+
+      // Asegurarse de que el precio es un número
+      const precioFormato = formatoMoneda(parseFloat(producto.precio));
+      h5.innerHTML = `${precioFormato}`;
 
       const descripcion = document.createElement("p");
       descripcion.innerText = producto.descripcion;
@@ -32,8 +43,8 @@ document.addEventListener("DOMContentLoaded", async function () {
       boton.innerText = "Ver más";
 
       // Añadir los elementos a la card
-      cardPriceTitle.appendChild(h3);
       cardPriceTitle.appendChild(h4);
+      cardPriceTitle.appendChild(h5);
       card.appendChild(img);
       card.appendChild(cardPriceTitle);
       card.appendChild(descripcion);

@@ -179,7 +179,7 @@ nav ul li a:visited{
     margin-bottom: 55px;
 }
 .Cards{
-    width: 310px;
+    width: 320px;
     height: 530px;
     margin-top: 20px;
     margin-bottom: 50px;
@@ -192,9 +192,14 @@ nav ul li a:visited{
     justify-self: center;
     margin-left: 35px;
     margin-right: 25px;
+    position: relative;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    -webkit-box-shadow: 5px 5px 17px #9da2b1, -5px -5px 17px #ffffff;
+    box-shadow: 5px 5px 17px #9da2b1, -5px -5px 17px #ffffff;
 }
 .Cards img{
-    width: 310px;
+    width: 100%;
     height: 320px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -202,25 +207,32 @@ nav ul li a:visited{
 }
 .Cards-Price-title{
     display: flex;
-    width: 350px;
+    width: 100%; /* Asegura que se use todo el ancho disponible */
+    justify-content: space-between; /* Espaciado entre nombre y precio */
+    align-items: center; /* Centra verticalmente */
 }
-.Cards-Price-title h3{
-    width: 175px;
-    font-size: 1.5rem;
-    margin-top: 5px;
-    margin-left: 15px;
-}
+
 .Cards-Price-title h4{
-    width: 175px;
-    font-size: 1.5rem;
-    margin-top: 15px;
-    margin-right: 54px;
+    width: auto; /* Ajuste dinámico según el contenido */
+    font-size: 1.2rem;
+    margin-top: 5px;
+    margin-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Si el nombre es muy largo, lo corta con "..." */
+    white-space: nowrap; /* Evita que el texto haga salto de línea */
+}
+
+.Cards-Price-title h5{
+    width: auto;
+    font-size: 1.2rem;
+    margin-top: 5px;
+    margin-right: 10px;
     border-bottom: 2px solid transparent;
     border-image: linear-gradient(0.25turn, rgba(255, 34, 34, 0.614), rgb(200, 0, 255), rgba(155, 2, 2, 0));
     border-image-slice: 1;
     font-family: 'Lobster', cursive;
     color: rgb(255, 255, 255);
-    text-align: center;
+    text-align: right;
 }
 .Cards p{
     font-family: 'Lora', serif;
@@ -231,9 +243,9 @@ nav ul li a:visited{
     text-align: justify;
 }
 .Cards button{
-    position: relative;
+    position: absolute;
     left: 90px;
-    top: 50px;
+    bottom: -17px;
     background-color: #f5de7d;
     color: #000000;
     font-weight: bold;
@@ -267,7 +279,6 @@ nav ul li a:visited{
 .Ver:hover{
     transform: perspective(200px) scale3d(0.7, 0.7, 0.8) translateZ(90px);
 }
-
 footer {
     background-color: #3cb043;
     color: white;
