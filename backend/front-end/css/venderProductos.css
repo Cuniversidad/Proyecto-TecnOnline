@@ -1,0 +1,285 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #3cb043;
+    color: white;
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+h1{
+    margin-left: 10rem;
+}
+.headertitle {
+    font-family: "Lacquer", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: start;
+}
+nav {
+    background-color: #3cb043;
+    padding: 10px;
+    margin-bottom: 15px;
+    display: flex;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: end;
+}
+nav ul li {
+    font-family: "Joan", serif;
+    color: white;
+    font-size: 1.6rem;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+nav ul li:hover{
+    border-bottom: 2px solid whitesmoke;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: "Joan", serif;
+    color: white;
+    font-size: 1.6rem;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+nav ul li a:visited{
+    text-decoration: none;
+    font-family: "Joan", serif;
+    color: white;
+    font-size: 1.6rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.user-icon {
+    position: relative;
+    display: inline-block;
+}
+.user-icon img {
+    width: 70px;
+    height: 70px;
+    margin-top: 14px;
+    margin-left: 4rem;
+}
+.tooltip-text {
+    position: absolute;
+    top: 100%; 
+    left: 74%; 
+    transform: translateX(-50%); 
+    background-color: #007e00; 
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    height: 160px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+}
+.tooltip-text::after {
+    content: "";
+    position: absolute;
+    bottom: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #007e00 transparent;
+  }
+.tooltip-text ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    padding: 10px;
+}
+.tooltip-text ul li {
+    padding: 5px;
+  }
+.user-icon:hover .tooltip-text,
+.user-icon .tooltip-text:hover{
+    top: 100px;
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+.titulo-container{
+    margin-top: 80px;
+    margin-right: 140px;
+    margin-bottom: 0;
+    font-family: "Lacquer", system-ui;
+}
+.titulo{
+    text-align: center;
+    font-size: 2.3rem;
+    margin-right: 45px;
+}
+.container{
+    display: flex;
+}
+.aside-img{
+    background: rgb(243, 246, 242);
+    margin-top: 50px;
+    margin-left: 160px;
+    width: 750px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */ 
+}
+.aside-img img{
+    max-width: 100%; 
+    height: auto;
+}
+#file-input {
+    display: none;
+}
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #007e00;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}  
+.custom-file-upload:hover {
+    background-color: #005c00; 
+  }
+.container-form-vender{
+    margin-top: 50px;
+}
+.form-vender{
+    width: 650px;
+    height: 608px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 15%;
+}
+.form-vender label{
+    font-size: 1.5rem;
+    font-family: "Lacquer", system-ui;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.form-vender input{
+    border: 1px solid rgb(232, 234, 236);
+    border-radius: 10px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    height: 10%;
+    margin-bottom: 80px;
+    font-size: 1.5rem;
+    text-align: center;
+    outline: none;
+}
+.form-vender input:focus{
+    border: 1px solid #3cb043;
+    border-radius: 10px;
+}
+.publicar{
+    border-radius: 5px;
+    width: 200px;
+    height: 55px;
+    margin-left: 25px;
+    border: none;
+    background: #3cb043;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease;
+}
+.publicar:hover{
+    transform: scale(1.1);
+    background: #43c84c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: #3cb043;
+    color: white;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 7vh;
+}
+.footertitle{
+    font-family: "Lacquer", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    text-align: start;
+    font-size: 3.8rem;
+    margin-left: 12rem;
+}
+footer ul {
+    list-style: none;
+    padding: 5px;
+    text-align: start;
+    margin-right: 10rem;
+    transition: 1s ease;
+}
+footer ul li {
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+}
+footer ul li:hover{
+    border-bottom: 2px solid whitesmoke;
+}
+footer .contact-info {
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    font-family: "Lacquer", system-ui;
+}

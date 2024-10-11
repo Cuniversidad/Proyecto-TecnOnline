@@ -38,8 +38,8 @@ nav ul li {
     font-family: "Joan", serif;
     color: white;
     font-size: 1.6rem;
-    padding-left: 10px;
-    padding-right: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 nav ul li:hover{
@@ -51,8 +51,8 @@ nav ul li a {
     font-family: "Joan", serif;
     color: white;
     font-size: 1.6rem;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 nav ul li a:visited{
     text-decoration: none;
@@ -62,64 +62,62 @@ nav ul li a:visited{
     padding-left: 15px;
     padding-right: 15px;
 }
+.user-icon {
+    position: relative;
+    display: inline-block;
+}
 .user-icon img {
     width: 70px;
     height: 70px;
     margin-top: 14px;
-    margin-left: 6.5rem;
+    margin-left: 4rem;
 }
-.banner {
-    background-color: black;
-    color: white;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 160px;
-    margin-right: 180px;
-    height: 350px;
-}
-.banner img {
-    max-width: 400px;
-    height: 350px;
-    margin-right: 200px;
-    margin-bottom: 20px;
-}
-.banner-content {
-    max-width: 600px;
-    margin-left: 150px;
-    margin-bottom: 120px;
-}
-.banner-content h2 {
-    font-size: 36px;
-}
-.banner-content p {
-    font-size: 18px;
-}
-.banner-content button {
-    position: relative;
-    left: 90px;
-    top: 50px;
-    background-color: #f5de7d;
-    color: #000000;
-    font-weight: bold;
-    font-family: 'Lobster', cursive;
-    border-radius: 15px;
-    width: 180px;
-    height: 50px;
-    font-size: 1.2rem;
+.tooltip-text {
+    position: absolute;
+    top: 100%; 
+    left: 74%; 
+    transform: translateX(-50%); 
+    background-color: #007e00; 
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+    height: 160px;
     text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
 }
-.banner-content button:hover{
-    transform: perspective(200px) scale3d(0.7, 0.7, 0.7) translateZ(100px);
+.tooltip-text::after {
+    content: "";
+    position: absolute;
+    bottom: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #007e00 transparent;
+  }
+.tooltip-text ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    padding: 10px;
 }
-.parrafo{
-    width: 80%;
-    margin-top: 55px;
-    margin-bottom: 55px;
-    margin-left: 180px;
-    font-family: "Lacquer", system-ui;
-    font-size: 2rem;
+.tooltip-text ul li {
+    padding: 5px;
+  }
+.user-icon:hover .tooltip-text,
+.user-icon .tooltip-text:hover{
+    top: 100px;
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.3s;
+}
+.section-cards{
+    margin-top: 150px;
 }
 .Container-Cards{
     width: 70%;
@@ -219,7 +217,6 @@ nav ul li a:visited{
 .Ver:hover{
     transform: perspective(200px) scale3d(0.7, 0.7, 0.8) translateZ(90px);
 }
-
 footer {
     background-color: #3cb043;
     color: white;
